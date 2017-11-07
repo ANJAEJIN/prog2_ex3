@@ -13,7 +13,7 @@ public  class  ExDice  extends  Dice {
 
     @Override 
     public  void  play () {
-        int value = (int)(Math.random()*(this.getValMax()-this.getValMin())+this.getValMin())+1;
+        int value = (int)(Math.random()*(this.getValMax()-this.getValMin()+1)+this.getValMin());
 
         super . setVal (value);
     }
